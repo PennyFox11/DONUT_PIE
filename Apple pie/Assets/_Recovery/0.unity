@@ -651,8 +651,8 @@ Transform:
   m_GameObject: {fileID: 1476572664}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.6056, y: -0.35, z: 5.535}
-  m_LocalScale: {x: 4.1089306, y: 1, z: 2.8261135}
+  m_LocalPosition: {x: 1.35355, y: -0.35, z: 1.35355}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -669,7 +669,6 @@ GameObject:
   - component: {fileID: 2006823026}
   - component: {fileID: 2006823025}
   - component: {fileID: 2006823024}
-  - component: {fileID: 2006823030}
   - component: {fileID: 2006823029}
   - component: {fileID: 2006823028}
   - component: {fileID: 2006823031}
@@ -867,8 +866,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FSController
   moveSpeed: 5
-  gravity: -9.8
-  jumpHeight: 3
+  gravity: -9.81
+  jumpHeight: 10
   cameraTransform: {fileID: 330585546}
   lookSensitivity: 2
   verticalLookLimit: 90
@@ -878,23 +877,6 @@ MonoBehaviour:
   crouchHeight: 1
   standHeight: 2
   crouchSpeed: 2.5
---- !u!114 &2006823030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2006823023}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f37fed07faf67241afcb696eed6852e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FPController
-  moveSpeed: 5
-  gravity: -9.81
-  cameraTransform: {fileID: 330585546}
-  lookSensitivity: 2
-  verticalLookLimit: 90
 --- !u!143 &2006823031
 CharacterController:
   m_ObjectHideFlags: 0
